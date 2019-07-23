@@ -1,0 +1,20 @@
+<!-- I learned how to override styles in CSS. I created another class called blue-text and added it
+to the h1 element along with the pink-text class. Since blue-text is listed first, it is the class that
+is prioritized, therefore the text is blue and not pink.-->
+
+<style>
+  body {
+    background-color: black;
+    font-family: monospace;
+    color: green;
+  }
+  .pink-text {
+    color: pink;
+  }
+
+/*Changes made here*/
+  .blue-text {
+    color: blue;
+  }
+</style>
+<h1 class=" blue-text pink-text">Hello World!</h1>
