@@ -1,0 +1,22 @@
+<!-- I learned that an id overrides a class declaration. By creating the id orange-text, and leaving the
+class attributes of pink and blue text, you can see the text is now orange and not the other colors.-->
+
+<style>
+  body {
+    background-color: black;
+    font-family: monospace;
+    color: green;
+  }
+  .pink-text {
+    color: pink;
+  }
+  .blue-text {
+    color: blue;
+  }
+
+/*Changes made here*/
+  #orange-text {
+    color: orange;
+  }
+</style>
+<h1 id="orange-text" class="pink-text blue-text">Hello World!</h1>
