@@ -1,0 +1,31 @@
+<!-- In this exercise, I learned that flex items within a container don't always fill
+all of the space. I learned different concepts for align elements within this lesson.
+ I also learned that justify-content is an element, and center is a value it takes to
+make the items within the container the same size.-->
+
+<style>
+
+  /*Changes made here*/
+  #box-container {
+    background: gray;
+    display: flex;
+    height: 500px;
+    justify-content: center;
+  }
+  #box-1 {
+    background-color: dodgerblue;
+    width: 25%;
+    height: 100%;
+  }
+
+  #box-2 {
+    background-color: orangered;
+    width: 25%;
+    height: 100%;
+  }
+</style>
+
+<div id="box-container">
+  <div id="box-1"></div>
+  <div id="box-2"></div>
+</div>
