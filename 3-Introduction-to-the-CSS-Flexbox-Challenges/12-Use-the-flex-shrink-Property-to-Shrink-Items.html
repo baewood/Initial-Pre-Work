@@ -1,0 +1,31 @@
+<!-- I learned how to use the flex-shrink property to shrink items in the flex container.
+By applying this property to an element, in this exercise the boxes changes size. I also
+learned that the flex-shrink property takes numbers as value. The higher the number, the more
+it shrinks compares to other items within the flex container.-->
+
+<style>
+  #box-container {
+    display: flex;
+    height: 500px;
+  }
+
+  /*Changes made to the following ids*/
+  #box-1 {
+    background-color: dodgerblue;
+    width: 100%;
+    height: 200px;
+    flex-shrink: 1;
+  }
+
+  #box-2 {
+    background-color: orangered;
+    width: 100%;
+    height: 200px;
+    flex-shrink: 2;
+  }
+</style>
+
+<div id="box-container">
+  <div id="box-1"></div>
+  <div id="box-2"></div>
+</div>
