@@ -1,0 +1,28 @@
+<style>
+/* In this exercise, I learned about adding columns with grid-template-columns. Setting
+the column values for the grid is similar to writing shorthand code for margins and padding.
+I also learned that however many columns you want, you must state their length.*/
+
+  .d1{background:LightSkyBlue;}
+  .d2{background:LightSalmon;}
+  .d3{background:PaleTurquoise;}
+  .d4{background:LightPink;}
+  .d5{background:PaleGreen;}
+
+  .container {
+    font-size: 40px;
+    width: 100%;
+    background: LightGray;
+    display: grid;
+    /* Changes made here */
+    grid-template-columns: 100px 100px 100px;
+  }
+</style>
+
+<div class="container">
+  <div class="d1">1</div>
+  <div class="d2">2</div>
+  <div class="d3">3</div>
+  <div class="d4">4</div>
+  <div class="d5">5</div>
+</div>
