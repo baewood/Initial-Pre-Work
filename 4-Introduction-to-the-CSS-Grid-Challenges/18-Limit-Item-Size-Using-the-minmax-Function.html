@@ -1,0 +1,39 @@
+<!-- In this lesson, I learned how to limit item size using the minmax function. At first
+this exercise was really challenging. I tried to mimic the code from the repeat function
+exercise and then tried to create the code going off of the example in the lesson. I learned
+that the minmax function went inside the repeat function through trial and error. I thought of
+it less as CSS but something similar to programming languages instead of scripting where
+repeat was the initial function needed and that minmax was the function being called within another
+function. I don't think it's something that would actually be done in a language, for example, like
+Python, but the idea is what helped me figure out what needed to be done.-->
+
+<style>
+  .item1{background:LightSkyBlue;}
+  .item2{background:LightSalmon;}
+  .item3{background:PaleTurquoise;}
+  .item4{background:LightPink;}
+  .item5{background:PaleGreen;}
+
+  .container {
+    font-size: 40px;
+    min-height: 300px;
+    width: 100%;
+    background: LightGray;
+    display: grid;
+
+    /* changes made below this line */
+
+    grid-template-columns: repeat(3, minmax(90px, 1fr));
+
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 10px;
+  }
+</style>
+
+<div class="container">
+  <div class="item1">1</div>
+  <div class="item2">2</div>
+  <div class="item3">3</div>
+  <div class="item4">4</div>
+  <div class="item5">5</div>
+</div>
