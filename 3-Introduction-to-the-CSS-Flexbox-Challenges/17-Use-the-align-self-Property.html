@@ -1,0 +1,31 @@
+<!--In this exercise, I learned about the final property for flex items and how to use it.
+Align-self allows you to adjust an items alignment individually instead of all at once.
+I learned that the properties float, clear and vertical-align don't work on flex items.
+I also learned that align-self accepts the same values as align-items and will override it. -->
+
+<style>
+  #box-container {
+    display: flex;
+    height: 500px;
+  }
+
+  /*Changes made to the box IDs*/
+  #box-1 {
+    background-color: dodgerblue;
+    align-self: center;
+    height: 200px;
+    width: 200px;
+  }
+
+  #box-2 {
+    background-color: orangered;
+    align-self: flex-end;
+    height: 200px;
+    width: 200px;
+  }
+</style>
+
+<div id="box-container">
+  <div id="box-1"></div>
+  <div id="box-2"></div>
+</div>
