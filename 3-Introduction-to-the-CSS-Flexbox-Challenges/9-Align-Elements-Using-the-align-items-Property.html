@@ -1,0 +1,31 @@
+<!-- In this lesson, I learned about the align-items property. It's similar to justify-content
+but it is used for items along the main axis of the flex container. Align-items is used
+along the flex container's cross axis. I also learned that the cross axis is for columns, and
+it has different values that it can take on.-->
+
+<style>
+
+  /*Changes made here*/
+  #box-container {
+    background: gray;
+    display: flex;
+    height: 500px;
+    align-items: center;
+  }
+  #box-1 {
+    background-color: dodgerblue;
+    width: 200px;
+    font-size: 24px;
+  }
+
+  #box-2 {
+    background-color: orangered;
+    width: 200px;
+    font-size: 18px;
+  }
+</style>
+
+<div id="box-container">
+  <div id="box-1"><p>Hello</p></div>
+  <div id="box-2"><p>Goodbye</p></div>
+</div>
