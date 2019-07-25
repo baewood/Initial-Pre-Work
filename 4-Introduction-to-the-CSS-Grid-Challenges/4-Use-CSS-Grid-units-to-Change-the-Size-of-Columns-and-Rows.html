@@ -1,0 +1,30 @@
+<!-- In this lesson, I learned how to use CSS Grid units to change the size
+of columns and rows. I also learned that I can use px and em to define the sizes
+but that I could also use fr, auto and % as well. I also learned the hard way that
+they didn't need commas after each one.-->
+
+<style>
+  .d1{background:LightSkyBlue;}
+  .d2{background:LightSalmon;}
+  .d3{background:PaleTurquoise;}
+  .d4{background:LightPink;}
+  .d5{background:PaleGreen;}
+
+  .container {
+    font-size: 40px;
+    width: 100%;
+    background: LightGray;
+    display: grid;
+    /* Changes made here.*/
+    grid-template-columns: 1fr 100px 2fr;
+    grid-template-rows: 50px 50px;
+  }
+</style>
+
+<div class="container">
+  <div class="d1">1</div>
+  <div class="d2">2</div>
+  <div class="d3">3</div>
+  <div class="d4">4</div>
+  <div class="d5">5</div>
+</div>
