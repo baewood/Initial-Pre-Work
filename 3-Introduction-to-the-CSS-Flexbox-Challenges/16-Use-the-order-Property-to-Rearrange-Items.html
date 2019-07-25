@@ -1,0 +1,31 @@
+<!-- In this exercise, I learned how to use the order property to rearrange items in
+the flex container. Order means exactly what it says. It orders how flex items appear.
+The property takes numbers as values and negative numbers can be used.-->
+
+<style>
+  #box-container {
+    display: flex;
+    height: 500px;
+  }
+
+/*Changes made to the box IDs*/
+
+  #box-1 {
+    background-color: dodgerblue;
+    order: 2;
+    height: 200px;
+    width: 200px;
+  }
+
+  #box-2 {
+    background-color: orangered;
+    order: 1;
+    height: 200px;
+    width: 200px;
+  }
+</style>
+
+<div id="box-container">
+  <div id="box-1"></div>
+  <div id="box-2"></div>
+</div>
