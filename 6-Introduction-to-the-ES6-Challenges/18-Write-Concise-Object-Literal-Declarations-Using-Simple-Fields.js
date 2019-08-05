@@ -1,15 +1,15 @@
-// In this lesson, I learned how to remove the function keyword and write concise declarative
-// functions with ES6. Instead of setGear: function(newGear), the line became setGear(newGear).
-// This made setGear the function's name. 
+// In this lesson, I learned how to write concice object literal declarations using simple
+// fields. I wrote a simple function that returns the objects containing those fields.
+// This eliminates the reduncancy of having to write x: x. 
 
-// change code below this line
-const bicycle = {
-  gear: 2,
-  setGear(newGear) {
-    "use strict";
-    this.gear = newGear;
-  }
+const createPerson = (name, age, gender) => {
+  "use strict";
+  // change code below this line
+  return {
+    name,
+    age,
+    gender
+  };
+  // change code above this line
 };
-// change code above this line
-bicycle.setGear(3);
-console.log(bicycle.gear);
+console.log(createPerson("Zodiac Hasbro", 56, "male")); // returns a proper object
